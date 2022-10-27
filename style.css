@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #081020;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.NavButtonsItemBordered {
+    border-image: url("./images/blueGradBorder.png") 3;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    transition: all 0.25s ease-in;
+}
+.NavButtonsItemBordered:hover {
+    box-shadow: 0px 0px 10px 5px #64acff31;
+}
+
+.blueGradText {
+    background: linear-gradient(97.93deg, #a2facf 10.03%, #64acff 82.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.roundBullet {
+    display: inline-block;
+    min-width: 7px;
+    min-height: 7px;
+    background: #afbcda;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/* ####### NAVBAR ######## */
+.Navbar {
+    height: 10vh;
+    /* border: 1px solid #f4f4f4; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    color: #fff;
+    padding: 0.5rem 0;
+    margin-top: 15px;
+}
+.header {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    /* line-height: 46px; */
+    /* identical to box height */
+    color: #fff;
+    letter-spacing: 0.12em;
+}
+.blueGradient {
+    background: linear-gradient(97.93deg, #a2facf 10.03%, #64acff 82.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logoImg {
+    height: 50px;
+    margin-right: 12px;
+}
+
+.NavLinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.NavItems {
+    margin: 0 10px;
+    padding: 0.6rem 0;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #43557e;
+    letter-spacing: 0.05em;
+    transition: color 0.22s ease-in-out;
+}
+.NavItems:hover {
+    color: #fff;
+}
+.NavActive {
+    background: #121a2c;
+    border-radius: 5px;
+    padding: 0.6rem 1.4rem;
+    color: #fff;
+}
+.NavButtonsItem {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 26px;
+    margin-left: 20px;
+    padding: 0.5rem 0.8rem;
+    transition: color 0.25s ease-in;
+}
+.NavButtonsItem:hover {
+    color: #e9e9e9;
+}
+
+@media screen and (max-width: 900px) {
+    .logoImg {
+        height: 46px;
+    }
+    .header {
+        font-size: 29px;
+    }
+    .NavItems {
+        font-size: 12px;
+    }
+    .NavButtonsItem {
+        font-size: 0.95rem;
+    }
+}
+@media screen and (max-width: 830px) {
+    .Navbar {
+        flex-direction: column;
+    }
+    .header {
+        padding: 0;
+        margin: 0;
+    }
+    .NavLinks {
+        margin: 1.7rem 0;
+    }
+    .logo {
+        margin-top: 0.25rem;
+    }
+    .NavItems {
+        margin: 0 22px;
+    }
+}
+
+/* ####### HERO ######## */
+.Hero {
+    color: #fff;
+    min-height: 88vh;
+}
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-start-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.Hero h2 {
+    font-size: 64px;
+    line-height: 92px;
+}
+.Hero p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 41px;
+    margin-bottom: 40px;
+    color: #bec8df;
+}
+.Hero .left,
+.Hero .right,
+.Stats .left,
+.Stats .right {
+    width: 50%;
+}
+.Hero a {
+    padding: 0.8rem 2.5rem;
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 31px;
+}
+
+/*Stats*/
+.Stats {
+    color: #fff;
+    font-family: "Space Grotesk";
+}
+.Stats-Items {
+    width: 100%;
+}
+.Stats h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+}
+.Stats p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    background: linear-gradient(
+        0deg,
+        rgba(175, 188, 218, 0.62),
+        rgba(175, 188, 218, 0.62)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.Stats .left {
+    flex-direction: column;
+}
+.Stats-Lines {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 30px;
+}
+.Stats-Lines .left {
+    width: 30%;
+    border-top: 3px solid #3a4862;
+    border-right: 2px solid #3a4862;
+    border-top-right-radius: 20px;
+    height: 100px;
+}
+.Stats-Lines .right {
+    width: 70%;
+    border-top: 3px solid #3a4862;
+    border-left: 2px solid #3a4862;
+    border-top-left-radius: 20px;
+    height: 100px;
+}
+
+/* ##### Learn Code #### */
+.LearnCode {
+    position: relative;
+
+    width: 100%;
+    color: #fff;
+    /* margin-bottom: 4rem; */
+}
+.LearnCodeWrapper {
+    background: linear-gradient(
+        257.25deg,
+        rgba(8, 16, 34, 0.2) 5.23%,
+        rgba(8, 16, 34, 0.9) 96.29%
+    );
+    backdrop-filter: blur(32.5px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 30px;
+    width: 85%;
+    margin: 0 auto;
+    border: 1px solid #afbcda66;
+    padding: 2.9rem 3.75rem;
+    position: relative;
+    /* z-index: 0; */
+}
+.LearnCode h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 72px;
+    margin-bottom: 0px;
+}
+.LearnCodeCard {
+    min-height: 300px;
+    /* border: 1px solid gray; */
+    /* position: relative; */
+}
+.LearnCodeCard .left h4,
+.LearnCodeCard .left li {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140.6%;
+    /* or 51px */
+    list-style: none;
+    color: #afbcda;
+}
+.LearnCodeCard .left h4 {
+    font-size: 29px;
+}
+.LearnCodeGradImg {
+    position: absolute;
+    top: -30%;
+    left: -14%;
+    /* z-index: 3; */
+}
+
+/* ###### TIMELINE ######*/
+.Timeline {
+    width: 100%;
+    display: flex;
+}
+.Timeline .left {
+    width: 15%;
+    /* border: 1px solid green; */
+}
+.Timeline .right {
+    width: 71%;
+    /* border: 1px solid green; */
+    /* padding-bottom: 5rem; */
+}
+.Timeline1 {
+    border-right: 4px solid #3a4862;
+
+    /* padding-right: 20px; */
+
+    /* border-bottom: 2px solid #3a4862; */
+    /* border-bottom-right-radius: 5px; */
+}
+.Timeline2 {
+    border-left: 4px solid #3a4862;
+    /* height: 90px;/ */
+    border-bottom: 4px solid #3a4862;
+    border-top: 4px solid #3a4862;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: -30px;
+    /* margin-right: 20px; */
+    height: 95px;
+}
+.left2 {
+    padding-left: 95px;
+}
+.Timeline3 {
+    border-left: 4px solid #3a4862;
+    padding-bottom: 2rem;
+    margin-top: -4px;
+    /* border-bottom: 2px solid #3a4862; */
+}
+.Timeline3-left {
+    /* border-right: 4px solid #3a4862; */
+}
+.Timeline4 .left,
+.Timeline4-right-left,
+.Timeline5-right-left {
+    height: 100px;
+    /* border: 2px solid #3a4862; */
+}
+.Timeline4 .left {
+    /* border: 4px solid #3a4862; */
+}
+.Timeline4-right-left {
+    width: 50%;
+    border-left: 4px solid #3a4862;
+    border-bottom: 4px solid #3a4862;
+    border-bottom-left-radius: 30px;
+}
+.Timeline5-right-left {
+    width: 50%;
+    border-right: 4px solid #3a4862;
+    /* border-bottom: 4px solid #3a4862; */
+    /* border-top-right-radius: 30px; */
+}
+.Timeline6-left {
+    /* border: 1px solid green; */
+}
+.Timeline6-Container {
+    /* border: 1px solid white; */
+    height: 55px;
+}
+.Timeline6-Container-left,
+.Timeline6-Container-right {
+    width: 50%;
+    /* border: 1px solid red; */
+    height: 100%;
+}
+.Timeline6-Container-left {
+    border-right: 4px solid #3a4862;
+}
+.Timeline7 {
+    height: 130px;
+    /* border: 1px solid red; */
+}
+.Timeline7 .left {
+    /* border: 1px solid green; */
+    height: 100%;
+}
+/* .Timeline7 .left,
+.Timeline7 .right {
+    width: 50%;
+}
+.Timeline7-right-left {
+    height: 100px;
+    width: 50%;
+    border: 4px solid red;
+} */
+.Timeline7-right-left {
+    border-top: 4px solid #3a4862;
+    border-left: 4px solid #3a4862;
+    border-top-left-radius: 30px;
+    height: 100%;
+    width: 50%;
+}
+.Implement {
+    text-align: center;
+    margin-top: 4.5rem;
+    margin-bottom: 8rem;
+}
+.Implement h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 52px;
+    text-align: center;
+}
+.Implement p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 31px;
+    text-align: center;
+    margin-top: 15px;
+    color: #afbcda;
+}
+.Implement .bottomP {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+/* ###### PROJECT #######*/
+.Project {
+    width: 100%;
+    /* border: 1px solid gold; */
+    margin-top: 4.5rem;
+    margin-bottom: 8rem;
+}
+.Project .project-left,
+.Project .project-right {
+    width: 50%;
+}
+.Project .project-left {
+    padding: 1rem;
+    position: relative;
+    padding-left: 4rem;
+    /* border: 1px solid rebeccapurple; */
+}
+.Project .project-right {
+    /* border: 1px solid red; */
+}
+.Project .project-right img {
+    display: block;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.Project h4 {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 51px;
+
+    color: #e3e3e3;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Project p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 31px;
+
+    color: #afbcda;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.projectCircleImg {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-55%, -50%);
+}
+/*###### MOTIVATION #######*/
+.Motivation {
+    /* border: 1px solid green; */
+    width: 30%;
+    transform: translateX(-50%);
+    margin-top: -3rem;
+    margin-bottom: 4rem;
+}
+.Motivation p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 38px;
+    text-align: center;
+
+    color: #3a4862;
+
+    backdrop-filter: blur(27.5px);
+}
+/*########GAMIFICATION ########*/
+
+.Gamification h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 72px;
+    margin-left: -45px;
+    margin-top: 9px;
+}
+.Gamification p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 41px;
+    margin-left: 30px;
+    color: #afbcda;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* ##### REWARDS ######*/
+.Rewards {
+    width: 100%;
+    /* border: 1px solid greenyellow; */
+    margin-left: -10px;
+    margin-top: 3rem;
+}
+.Reward {
+    width: 30%;
+    text-align: center;
+    /* margin: 0 auto; */
+}
+.blueBg {
+    display: inline-block;
+    /* background-color: #121a2c; */
+    height: 10px;
+    width: 50px;
+}
+.RewardImg img {
+    /* margin: 0; */
+    border: 10px solid #081020;
+}
+.Reward h4 {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 46px;
+    /* identical to box height */
+    margin-top: 1rem;
+    color: #ffffff;
+}
+.Reward p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #afbcda;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Reward-Para {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 41px;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    color: #d2e0ff;
+    margin-top: 3rem;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/*###### AVATAR ######*/
+.Avatar-Container {
+    margin-top: 8rem;
+}
+.Avatar-Container h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 52px;
+    margin-bottom: 2.5rem;
+    color: #d2e0ff;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Avatar-Container ul {
+    width: 60%;
+    /* border: 1px solid red; */
+}
+.Avatar-Container li {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    list-style: none;
+    color: #afbcda;
+    margin: 1rem 0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.avatar-left {
+    /* border: 4px solid green;
+    border-bottom-left-radius: 30px; */
+    padding-left: 4rem;
+    width: 50%;
+}
+.avatar-right {
+    position: relative;
+    /* border: 1px solid rebeccapurple; */
+    width: 50%;
+    min-height: 400px;
+}
+.blueGradLine {
+    display: inline-block;
+    height: 7px;
+    border-radius: 60px;
+    width: 60%;
+    background: linear-gradient(97.93deg, #a2facf 10.03%, #64acff 82.25%);
+    margin-bottom: 2.1rem;
+}
+.avatar-img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+}
+.avatar-img2 {
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    width: 35%;
+}
+.avatar-img3 {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 40%;
+}
+
+/* ###### SHOP ######*/
+.Shop h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 72px;
+    text-align: center;
+}
+.Shop p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: #afbcda;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Shop-Imgs {
+    margin: 2.5rem 0;
+    margin-bottom: 1.75rem;
+    /* border: 1px solid green; */
+    position: relative;
+}
+.Shop-Img-Row {
+    margin-top: -60px;
+}
+.Shop-Img-Row img {
+    width: 28%;
+    margin: 0 auto;
+}
+.Shop-BlueGrad-Decor {
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+}
