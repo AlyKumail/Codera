@@ -183,6 +183,11 @@ img {
     justify-content: flex-start;
     align-items: center;
 }
+.flex-start-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 .Hero h2 {
     font-size: 64px;
     line-height: 92px;
@@ -209,6 +214,71 @@ img {
     font-weight: 700;
     font-size: 19px;
     line-height: 31px;
+}
+
+@media screen and (max-width: 925px) {
+    .Hero h2 {
+        font-size: 54px;
+        line-height: 92px;
+    }
+    .Hero p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 41px;
+        margin-bottom: 40px;
+        color: #bec8df;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .Hero h2 {
+        font-size: 44px;
+        line-height: 59px;
+        margin-top: 4rem;
+    }
+    .Hero p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 35px;
+        margin-bottom: 40px;
+        color: #bec8df;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .container {
+        width: 96%;
+    }
+    .Hero {
+        flex-direction: column !important;
+        margin-top: 5rem;
+    }
+    .Hero .left,
+    .Hero .right {
+        width: 90%;
+    }
+    .Hero .right {
+        height: 100px;
+        /* border: 1px solid greenyellow; */
+        margin-bottom: 1rem;
+    }
+    /* .Hero h2 {
+        font-size: 54px;
+        line-height: 92px;
+    }
+    .Hero p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 41px;
+        margin-bottom: 40px;
+        color: #bec8df;
+    } */
 }
 
 /*Stats*/
@@ -262,6 +332,40 @@ img {
     border-left: 2px solid #3a4862;
     border-top-left-radius: 20px;
     height: 100px;
+}
+
+@media screen and (max-width: 860px) {
+    .Stats .left {
+        /* width: 100%; */
+        /* border: 1px solid green; */
+    }
+    .Stats-Item {
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .Stats h3 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .Stats p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+
+        background: linear-gradient(
+            0deg,
+            rgba(175, 188, 218, 0.62),
+            rgba(175, 188, 218, 0.62)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
 }
 
 /* ##### Learn Code #### */
@@ -323,6 +427,81 @@ img {
     /* z-index: 3; */
 }
 
+@media screen and (max-width: 830px) {
+    .LearnCodeCard {
+        min-height: 200px;
+        /* border: 1px solid gray; */
+        /* position: relative; */
+    }
+    .LearnCode h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 52px;
+        margin-bottom: 0px;
+    }
+    .LearnCodeCard .left h4,
+    .LearnCodeCard .left li {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140.6%;
+        /* or 51px */
+        list-style: none;
+        color: #afbcda;
+    }
+    .LearnCodeCard .left h4 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .LearnCodeWrapper {
+        background: linear-gradient(
+            257.25deg,
+            rgba(8, 16, 34, 0.2) 5.23%,
+            rgba(8, 16, 34, 0.9) 96.29%
+        );
+        backdrop-filter: blur(32.5px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 30px;
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid #afbcda66;
+        padding: 2.2rem 3rem;
+    }
+    .LearnCodeCard {
+        min-height: 200px;
+        /* border: 1px solid gray; */
+        /* position: relative; */
+    }
+    .LearnCode h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 52px;
+        margin-bottom: 0px;
+    }
+    .LearnCodeCard .left h4,
+    .LearnCodeCard .left li {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140.6%;
+        /* or 51px */
+        list-style: none;
+        color: #afbcda;
+    }
+    .LearnCodeCard .left h4 {
+        font-size: 23px;
+    }
+}
+
 /* ###### TIMELINE ######*/
 .Timeline {
     width: 100%;
@@ -355,9 +534,50 @@ img {
     border-top-right-radius: -30px;
     /* margin-right: 20px; */
     height: 95px;
+    min-width: 200px;
+    margin-right: 35rem;
 }
 .left2 {
+    /* width: 30%; */
+    /* border: 1px solid green; */
     padding-left: 95px;
+    overflow-x: hidden !important;
+}
+
+@media screen and (max-width: 1250px) {
+    .left2 {
+        padding-left: 85px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .left2 {
+        padding-left: 75px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .left2 {
+        padding-left: 60px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .left2 {
+        padding-left: 45px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .left2 {
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .left2 {
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .left2 {
+        padding-left: 0px;
+    }
 }
 .Timeline3 {
     border-left: 4px solid #3a4862;
@@ -429,6 +649,7 @@ img {
     height: 100%;
     width: 50%;
 }
+
 .Implement {
     text-align: center;
     margin-top: 4.5rem;
@@ -456,6 +677,53 @@ img {
     width: 65%;
     margin: 0 auto;
     margin-top: 22px;
+}
+
+@media screen and (max-width: 600px) {
+    .Implement h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 52px;
+        text-align: center;
+    }
+    .Implement p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 31px;
+        text-align: center;
+        margin-top: 15px;
+        color: #afbcda;
+    }
+}
+
+@media screen and (max-width: 505px) {
+    .Implement h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 47px;
+        text-align: center;
+    }
+    .Implement p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 15px;
+        color: #afbcda;
+    }
+    .Implement .bottomP {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
 /* ###### PROJECT #######*/
@@ -511,6 +779,38 @@ img {
     top: 50%;
     transform: translate(-55%, -50%);
 }
+
+@media screen and (max-width: 768px) {
+    .Project {
+        flex-direction: column !important;
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+
+    .Project .project-left,
+    .Project .project-right {
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+    .Project p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .project-right {
+        /* border: 1px solid green; */
+        /* display: flex;
+        justify-content: flex-end;
+        align-items: flex-start; */
+    }
+    .project-right img {
+        margin-right: auto !important;
+        margin-left: 3rem !important;
+    }
+}
+
 /*###### MOTIVATION #######*/
 .Motivation {
     /* border: 1px solid green; */
@@ -552,6 +852,28 @@ img {
     color: #afbcda;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 505px) {
+    .Gamification h3 {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 72px;
+        margin-left: -45px;
+        margin-top: 9px;
+    }
+    .Gamification p {
+        font-family: "Space Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 30px;
+        margin-left: 30px;
+        color: #afbcda;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 }
 /* ##### REWARDS ######*/
 .Rewards {
@@ -719,5 +1041,301 @@ img {
 .Shop-BlueGrad-Decor {
     position: absolute;
     top: 15%;
+    z-index: -1;
+}
+.Timeline8 {
+    margin-bottom: 1rem;
+}
+.Timeline8-right-left {
+    /* border: 1px solid green; */
+    width: 350px;
+    height: 100px;
+    transform: translateX(-40%);
+    /* margin: 1rem 0; */
+}
+.Timeline8-right-left h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: left;
+}
+.Timeline8-right-left p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: left;
+    width: 350px;
+
+    margin: 0 auto;
+    color: #afbcda;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.Timeline8-right-right {
+    margin-top: 1rem;
+    /* border: 1px solid orange; */
+    min-width: 800px;
+    min-height: 210px;
+    color: #ffffff;
+    margin-left: -90px;
+}
+.testimonial {
+    background: #081020;
+    border: 3px solid #43557e;
+    box-shadow: 0px 35px 90px #000000;
+    border-radius: 15px;
+    width: 31%;
+    margin: 0 auto;
+    padding: 2.75rem 1.7rem;
+}
+.testimonial .quote {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+.person {
+    border: 3px solid rgba(67, 85, 126, 0.52);
+    border-radius: 10px;
+    padding: 0.7rem 0.75rem;
+}
+.testimonial img {
+    width: 45px;
+    margin-right: 0px;
+}
+.testimonial .name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.testimonial .school {
+    font-size: 0.65rem;
+    /* font-weight: bold; */
+}
+
+.Timeline9-right-left {
+    border-image: linear-gradient(to right, #3a4862, #01ffff) 1;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    height: 140px;
+    width: 50%;
+    border-bottom-left-radius: 30px;
+}
+.Timeline10 {
+    margin-bottom: 1.3rem;
+}
+.Timeline10-right-left {
+    border-right: 4px solid #01ffff;
+    /* border-bottom: 4px solid #3a4862; */
+    height: 80px;
+    width: 50%;
+    /* border-bottom-left-radius: 30px; */
+}
+
+.Timeline11 {
+    text-align: center;
+    color: #ffffff;
+}
+.Timeline11 h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 72px;
+}
+
+.Timeline11 p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 31px;
+    width: 600px;
+    margin: 0 auto;
+    color: #afbcda;
+}
+.Timeline11 .join {
+    margin-top: 1rem;
+}
+.Timeline11 ul {
+    list-style: none;
+    /* border: 1px solid green; */
+    text-align: left;
+    width: 600px;
+    margin: 3rem auto;
+    /* margin-top: 3rem; */
+}
+.Timeline11 ul li {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px;
+    margin: 0.5rem 0;
+    /* identical to box height */
+
+    /* text-align: center; */
+}
+.dotinBullet {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.textUnderline {
+    text-decoration: underline;
+}
+
+/* ####### NINJA ########*/
+.Ninja-Container {
+    position: relative;
+    /* border: 1px solid green; */
+    background: url("/images/ninjaBg.png") no-repeat center center/cover;
+    min-height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4rem;
+    margin-bottom: 5.5rem;
+    /* overflow-y: visible; */
+}
+.Ninja {
+    /* border: 1px solid rebeccapurple; */
+    /* margin-bottom: 9rem;
+    margin-top: 5.5rem; */
+    /* background: url("./images/ninjaBg.png"); */
+}
+.Ninja .left,
+.Ninja .right {
+    width: 50%;
+}
+.Ninja h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 55px;
+
+    color: #ffffff;
+}
+
+.Ninja p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.5px;
+    line-height: 31px;
+
+    color: #afbcda;
+}
+.Ninja a {
+    display: inline-block;
+    position: relative;
+}
+
+.main-btn-text {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    /* identical to box height */
+    /* display: block; */
+    color: #ffffff;
+}
+.sub-btn-text {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.blueGradBgButton {
+    display: inline-block;
+    background: linear-gradient(90deg, #a2facf 0%, #64acff 101.4%);
+    border-radius: 22px;
+    padding: 0.8rem 2.5rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.Ninja .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ninjaEclipse {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: -2;
+}
+
+/* ######## FOOTER #######*/
+.Footer-Container {
+    background: #04080f;
+    padding: 1.25rem 0;
+    position: relative;
+}
+
+.Footer-Container a {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    /* identical t  o box height */
+    margin-right: 35px;
+    color: #ffffff;
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info img {
+    margin-right: 10px;
+}
+.footer-info h1 {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.055em;
+
+    color: #ffffff;
+}
+.footer-info p {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 143.1%;
+    /* or 20px */
+    width: 180px;
+    margin-top: 0.5rem;
+    text-align: center;
+
+    color: rgba(175, 188, 218, 0.62);
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footerBar {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
 }
