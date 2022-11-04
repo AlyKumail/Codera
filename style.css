@@ -36,8 +36,15 @@ img {
 }
 
 .container {
-    width: 89%;
+    max-width: 1290px;
+
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1290px) {
+    .container {
+        max-width: 89%;
+    }
 }
 
 .NavButtonsItemBordered {
@@ -118,7 +125,7 @@ img {
 
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.9;
     line-height: 21px;
     /* identical to box height */
     color: #43557e;
@@ -292,6 +299,229 @@ img {
         margin-bottom: 40px;
         color: #bec8df;
     } */
+}
+
+/*###### MODALS ########*/
+#loginModal,
+#joinModal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.52);
+    margin-top: -1rem;
+    overflow-block: unset;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.displayNav {
+    display: flex !important;
+    z-index: 5;
+}
+.partition {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+.partition span {
+    color: #43557e;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.linex {
+    display: block;
+    height: 1px;
+    background: #43557e87;
+    width: 46%;
+}
+
+.modalForm {
+    position: relative;
+    max-width: 780px;
+    max-height: 90%;
+    border: 1px solid #afbcda66;
+    background: linear-gradient(
+        254.12deg,
+        rgba(8, 16, 34, 0.4) 3.19%,
+        #081022 96.26%
+    );
+    backdrop-filter: blur(16px);
+    /* Note: backdrop-filter has minimal browser support */
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    padding: 2.75rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.modalForm form input {
+    display: block;
+    width: 100%;
+    padding: 1.1rem 0.75rem;
+    font-size: 1rem;
+    font-family: "Space Grotesk";
+    background: rgba(67, 85, 126, 0.06);
+    border-radius: 10px;
+    border: 1px solid #afbcda66;
+    margin: 0.35rem 0;
+    color: #43557e;
+}
+
+.modalForm h2 {
+    font-size: 2.6rem;
+}
+
+.modalForm h3 {
+    color: #dfe8fc;
+    font-family: "Space Grotesk";
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+.secondayPara {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 127.5%;
+    /* identical to box height, or 18px */
+
+    text-align: center;
+    text-decoration-line: underline;
+    margin: 0.5rem 0;
+    color: #636f88;
+}
+
+.modalBtn {
+    font-family: "Space Grotesk";
+
+    width: 100%;
+
+    padding: 1.1rem 0;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+
+    position: relative;
+
+    box-sizing: border-box;
+
+    color: #fff;
+    background: #081022;
+
+    background-clip: padding-box; /* !importanté */
+    border: solid 2px transparent; /* !importanté */
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+}
+.modalBtn:hover {
+    color: #b8b8b8;
+}
+.gr1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -2px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, #ea4335, #fbbc05, #34a853, #4285f4);
+}
+.gr2 {
+    border: solid 3px transparent; /* !importanté */
+    cursor: pointer;
+}
+.gr2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -3px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, #a2facf, #64acff);
+}
+.modalBtn img {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+#crossbar,
+#crossbarLogin {
+    position: absolute;
+    top: 25px;
+    right: 28px;
+    cursor: pointer;
+}
+
+.forgot {
+    text-decoration-line: underline;
+    font-size: 1.05rem;
+    color: #636f88;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .modalForm {
+        max-width: 95%;
+        max-height: 90%;
+        z-index: 10;
+        padding: 2.5rem 2rem;
+    }
+    .modalForm h2 {
+        font-size: 2rem;
+    }
+
+    .modalForm h3 {
+        color: #dfe8fc;
+        font-family: "Space Grotesk";
+        font-size: 0.9rem;
+        font-weight: 500;
+        width: 90%;
+    }
+
+    .secondayPara {
+        font-size: 11px;
+
+        /* identical to box height, or 18px */
+        width: 80%;
+
+        margin: 0.5rem auto;
+    }
+    .modalBtn {
+        font-family: "Space Grotesk";
+
+        width: 100%;
+
+        padding: 1.1rem 0;
+        font-size: 0.9rem;
+        margin: 1rem 0;
+    }
+    .modalForm form input {
+        display: block;
+        width: 100%;
+        padding: 1.1rem 0.75rem;
+        font-size: 0.8rem;
+    }
 }
 
 /*Stats*/
@@ -681,7 +911,7 @@ img {
 .Implement {
     text-align: center;
     margin-top: 4.5rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 .Implement h3 {
     font-family: "Poppins";
@@ -758,8 +988,8 @@ img {
 .Project {
     width: 100%;
     /* border: 1px solid gold; */
-    margin-top: 4.5rem;
-    margin-bottom: 8rem;
+    margin-top: 0rem;
+    margin-bottom: 6.5rem;
 }
 .Project .project-left,
 .Project .project-right {
@@ -1689,6 +1919,19 @@ img {
 .Timeline11 {
     text-align: center;
     color: #ffffff;
+}
+.Timeline11 .right {
+    background: linear-gradient(
+        257.25deg,
+        rgba(8, 16, 34, 0.2) 5.23%,
+        rgba(8, 16, 34, 0.9) 96.29%
+    );
+    backdrop-filter: blur(32.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    padding: 1.8rem 0;
+    border-radius: 30px;
+
+    border: 1px solid #afbcda66;
 }
 .Timeline11 h3 {
     font-family: "Poppins";

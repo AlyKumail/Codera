@@ -18,6 +18,55 @@
         <title>Codera App</title>
     </head>
     <body>
+        <div id="loginModal">
+            <div class="modalForm">
+                <img id="crossbarLogin" src="./images/crossbar.png" alt="" />
+                <h2>Welcome Back!</h2>
+                <h3>Continue your streak today!</h3>
+                <p class="secondayPara">Earn Daily Rewards!</p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Username" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <button href="#" class="modalBtn gr2">Begin</button>
+                <a class="forgot" href="#">Forgot Password?</a>
+                <a class="forgot" href="#">Forgot Username?</a>
+            </div>
+        </div>
+        <div id="joinModal">
+            <div class="modalForm">
+                <img id="crossbar" src="./images/crossbar.png" alt="" />
+                <h2>Welcome</h2>
+                <h3>Congratulations on taking the first step.</h3>
+                <p class="secondayPara">
+                    We wil never spam your inbox with annoying emails
+                </p>
+                <a href="#" class="modalBtn gr1"
+                    ><img src="./images/google.png" alt="" />
+                    <span>Log in With Google</span>
+                </a>
+                <div class="partition">
+                    <span class="linex"></span>
+                    <span>OR</span>
+                    <span class="linex"></span>
+                </div>
+                <form>
+                    <input type="text" placeholder="Name" />
+                    <input type="text" placeholder="Email" />
+                    <input type="text" placeholder="Password" />
+                </form>
+                <button href="#" class="modalBtn gr2">Begin</button>
+            </div>
+        </div>
         <div class="container">
             <div class="Navbar">
                 <div class="logo">
@@ -43,8 +92,14 @@
                     </ul>
                 </div>
                 <div class="NavButtons">
-                    <a class="NavButtonsItem" href="#"> Log In </a>
-                    <a class="NavButtonsItem NavButtonsItemBordered" href="#">
+                    <a id="loginBtn" class="NavButtonsItem" href="#">
+                        Log In
+                    </a>
+                    <a
+                        id="joinNow"
+                        class="NavButtonsItem NavButtonsItemBordered"
+                        href="#"
+                    >
                         Join Now
                     </a>
                 </div>
@@ -527,5 +582,6 @@
             </div>
             <img class="footerBar" src="./images/footerBar.png" alt="" />
         </div>
+        <script src="./script.js"></script>
     </body>
 </html>
