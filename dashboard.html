@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./styles/dashboard.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <div class="Navbar">
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">Cod<span class="blueGradient">era</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a
+                            class="NavItems NavActive flex-center-center-col"
+                            href="#"
+                        >
+                            <img src="./images/home.png" alt="" />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="NavItems flex-center-center-col" href="#">
+                            <img src="./images/code.png" alt="" />
+                            <span>Code</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="NavItems flex-center-center-col" href="#">
+                            <img src="./images/shop.png" alt="" />
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="NavItems flex-center-center-col" href="#">
+                            <img src="./images/leaderboard.png" alt="" />
+                            <span>Leaderboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons flex">
+                <a class="DashboardNavPoints flex-center-center" href="#">
+                    <img class="fireball" src="./images/fireball.png" alt="" />
+                    2
+                </a>
+                <a
+                    class="DashboardNavPoints flex-center-center crystalScore"
+                    href="#"
+                >
+                    <img src="./images/crystal.png" alt="" />
+                    <span>5</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="Home flex-between-start">
+            <div class="home-left">
+                <div class="leftoff">
+                    <h2>Pick up where you left off...</h2>
+                    <div class="leftoff-data flex-center-center">
+                        <div class="leftoff-data-left">
+                            <h3>Variables</h3>
+                            <h4>> Storing Data</h4>
+                        </div>
+                        <div class="leftoff-data-right flex-center-center">
+                            <img
+                                class="leftoffPoint"
+                                src="./images/leftoffPoint.png"
+                                alt=""
+                            />
+                            <img
+                                class="crystal"
+                                src="./images/crystal2.png"
+                                alt=""
+                            />
+                            <span>10</span>
+                        </div>
+                    </div>
+                    <p>Keep it up! Almost there...</p>
+                </div>
+                <div class="home-left-wrap flex-between-start">
+                    <div class="acheivements">
+                        <div class="acheivements-header flex-between-center">
+                            <h2>Acheivements</h2>
+                            <p>VIEW ALL</p>
+                        </div>
+                        <div class="acheivements-body flex-center-center-col">
+                            <div class="acheivements-item">
+                                <input type="checkbox" name="1st" id="1st" />
+
+                                <label for="1st">Complete Intro Course</label>
+                            </div>
+                            <div class="acheivements-item">
+                                <input type="checkbox" name="2nd" id="2nd" />
+                                <label for="2nd">Get Five Shards</label>
+                            </div>
+                            <div class="acheivements-item">
+                                <input type="checkbox" name="3rd" id="3rd" />
+                                <label for="3rd">Get Five Shards</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-header flex">
+                            <h2>Progress</h2>
+                            <span class="progress-month"> Novmeber </span>
+                        </div>
+                        <div class="progress-body">
+                            <p class="progress-completed">1</p>
+                            <p class="progress-completed">2</p>
+                            <p class="progress-current">3</p>
+                            <p>4</p>
+                            <p>5</p>
+                            <p>6</p>
+                            <p>7</p>
+                            <p>8</p>
+                            <p>9</p>
+                            <p>10</p>
+                            <p>11</p>
+                            <p>12</p>
+                            <p>13</p>
+                            <p>14</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                            <p>1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-right">
+                <div class="character-header flex-between-center">
+                    <div class="character-name flex">
+                        <img src="./images/fire_knight.png" alt="" />
+                        <h4>Fire Knight</h4>
+                    </div>
+                    <div class="character-header-menu flex-between-center">
+                        <p class="character-header-menu-current">STATS</p>
+                        <p>WEAPONS</p>
+                        <p>BOOSTERS</p>
+                    </div>
+                </div>
+                <div class="stats-body">
+                    <div class="stats-body-data flex-between-start">
+                        <div class="stats-body-data-left">
+                            <div class="stats-properties">
+                                <div class="stat-property flex-start-center">
+                                    <img src="./images/bulletPlus.png" alt="" />
+                                    <div class="stat-property-data">
+                                        <div
+                                            class="stat-property-data-score flex-between-start"
+                                        >
+                                            <p>Strength:</p>
+                                            <p>10</p>
+                                        </div>
+                                        <div class="stat-progress">
+                                            <span
+                                                class="stat-progress-fill w-20"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-property flex-start-center">
+                                    <img src="./images/bulletPlus.png" alt="" />
+                                    <div class="stat-property-data">
+                                        <div
+                                            class="stat-property-data-score flex-between-start"
+                                        >
+                                            <p>Speed:</p>
+                                            <p>5</p>
+                                        </div>
+                                        <div class="stat-progress">
+                                            <span
+                                                class="stat-progress-fill w-10"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-property flex-start-center">
+                                    <img src="./images/bulletPlus.png" alt="" />
+                                    <div class="stat-property-data">
+                                        <div
+                                            class="stat-property-data-score flex-between-start"
+                                        >
+                                            <p>Health:</p>
+                                            <p>15</p>
+                                        </div>
+                                        <div class="stat-progress">
+                                            <span
+                                                class="stat-progress-fill w-15"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-property flex-start-center">
+                                    <img src="./images/bulletPlus.png" alt="" />
+                                    <div class="stat-property-data">
+                                        <div
+                                            class="stat-property-data-score flex-between-start"
+                                        >
+                                            <p>Sp.Attack:</p>
+                                            <p>20</p>
+                                        </div>
+                                        <div class="stat-progress">
+                                            <span
+                                                class="stat-progress-fill w-40"
+                                            ></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-property flex-start-center">
+                                    <div class="stat-property-data">
+                                        <div
+                                            class="stat-property-data-score-info flex-between-start"
+                                        >
+                                            <p>Stats points available:</p>
+                                            <p>2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stats-body-data-right">
+                            <h3>STRENGTH</h3>
+                            <p>
+                                Strength directly influences damage from melee
+                                attacks. High strength value increases total
+                                damage delt to opponents. Some weapons require
+                                higher strength values. to use
+                            </p>
+                            <div>
+                                <a href="#" class="orangeBtn">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stats-character-img flex-center-center">
+                        <img
+                            class="gradient"
+                            src="./images/orangeGrad.png"
+                            alt=""
+                        />
+                        <img src="./images/idle.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

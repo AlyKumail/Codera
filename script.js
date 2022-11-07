@@ -10,6 +10,7 @@ crossbar.addEventListener("click", () => {
     // if (crossbar.classList.contains("displayNav")) {
 
     joinModal.classList.remove("displayNav");
+    document.body.style.overflow = "auto";
 
     console.log("crossbar");
 
@@ -19,6 +20,8 @@ crossbarLogin.addEventListener("click", () => {
     // if (crossbar.classList.contains("displayNav")) {
 
     loginModal.classList.remove("displayNav");
+    document.body.style.overflow = "auto";
+
     console.log("crossbar");
 
     // }
@@ -27,12 +30,14 @@ crossbarLogin.addEventListener("click", () => {
 joinNow.addEventListener("click", () => {
     // if (loginModal.classList.contains("displayNav")) {
     joinModal.classList.add("displayNav");
+    document.body.style.overflow = "hidden";
     // }
     console.log("joinnow");
 });
 loginBtn.addEventListener("click", () => {
     // if (loginModal.classList.contains("displayNav")) {
     loginModal.classList.add("displayNav");
+    document.body.style.overflow = "hidden";
     // }
     console.log("joinnow");
 });
