@@ -127,11 +127,14 @@ img {
     font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 27px;
     /* line-height: 46px; */
     /* identical to box height */
     color: #fff;
     letter-spacing: 0.12em;
+}
+.DashboardNavPoints {
+    cursor: auto;
 }
 .blueGradient {
     background: linear-gradient(97.93deg, #a2facf 10.03%, #64acff 82.25%);
@@ -145,7 +148,7 @@ img {
     align-items: center;
 }
 .logoImg {
-    height: 50px;
+    height: 45px;
     margin-right: 12px;
 }
 
@@ -170,6 +173,9 @@ img {
     color: #43557e;
     letter-spacing: 0.05em;
     transition: color 0.22s ease-in-out;
+}
+.NavItems span {
+    font-size: 0.8rem !important;
 }
 .NavItems:hover {
     color: #fff;
@@ -198,7 +204,7 @@ img {
     background: #0e1a33;
     border-radius: 15px;
     font-family: "Space Grotesk";
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: 700;
     padding: 0.7rem 0;
     width: 105px;
@@ -249,7 +255,7 @@ img {
 
 /* ####### HOME ########*/
 .Home {
-    max-width: 1290px;
+    max-width: 1200px;
     margin: 0 auto;
     font-family: "Space Grotesk";
 
@@ -560,7 +566,7 @@ stats-body-data-right p {
 
 /* ######### CODE PAGE ##########*/
 .Code {
-    max-width: 1250px;
+    max-width: 1150px;
     margin: 0 auto;
     font-family: "Space Grotesk";
 
@@ -613,14 +619,14 @@ stats-body-data-right p {
 }
 .course h3 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 31px;
     margin-bottom: 0.7rem;
     color: #eeeeee;
 }
 .course p {
     font-weight: 500;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 26px;
     padding-right: 2rem;
     color: #d9d9d9;
@@ -663,6 +669,9 @@ stats-body-data-right p {
     color: white;
     display: flex;
     justify-content: space-between;
+}
+.Shop-Nav .NavButtons {
+    opacity: 0 !important;
 }
 .shop-left {
     width: 22%;
@@ -831,6 +840,76 @@ stats-body-data-right p {
     text-fill-color: transparent;
 }
 
+/* ######### LEADER BOARD PAGE ##########*/
+.Leaderboard {
+    max-width: 1290px;
+    margin: 0 auto;
+    font-family: "Space Grotesk";
+    margin-top: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.Leaderboard-Nav .award {
+    opacity: 0 !important;
+}
+.leaderboard-wrap {
+    width: 45%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.Leaderboard h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 72px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+.Leaderboard h4 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+
+.Leaderboard p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 41px;
+    /* identical to box height */
+
+    color: #ffffff;
+}
+
+.Leaderboard span {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 41px;
+    /* identical to box height */
+    margin: 0 1rem;
+    color: #ffffff;
+}
+
+.leaderboard-item,
+.leaderboard-item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leaderboard-item {
+    width: 100%;
+    margin: 1.4rem auto;
+    background: #0d182e;
+    border-radius: 15px;
+    padding: 0.5rem 2rem;
+}
+
 @media screen and (max-width: 1280px) {
     .Home,
     .Code {
@@ -865,8 +944,17 @@ stats-body-data-right p {
     .shop-item {
         width: 42%;
     }
+    .Leaderboard {
+        margin-top: 12rem;
+    }
+    .leaderboard-wrap {
+        width: 75%;
+        margin: 0 auto;
+        /* margin-top: 2rem; */
+        /* border: 1px solid red; */
+    }
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 768px) {
     .Shop {
         flex-direction: column;
     }
