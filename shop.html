@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./styles/dashboard.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Code</title>
+    </head>
+    <body>
+        <div class="Navbar">
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">Cod<span class="blueGradient">era</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a
+                            class="NavItems NavActive flex-center-center-col"
+                            href="dashboard.html"
+                        >
+                            <img src="./images/home.png" alt="" />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="code.html"
+                        >
+                            <img src="./images/code.png" alt="" />
+                            <span>Code</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="shop.html"
+                        >
+                            <img src="./images/shop.png" alt="" />
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="leaderboard.html"
+                        >
+                            <img src="./images/leaderboard.png" alt="" />
+                            <span>Leaderboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons"></div>
+        </div>
+
+        <div class="Shop">
+            <div class="shop-left">
+                <div class="item-type">
+                    <h2>Item Type</h2>
+                    <div class="item-option">
+                        <input checked type="checkbox" name="all" id="all" />
+                        <label for="all"><span>All</span><span>10</span></label>
+                    </div>
+                    <div class="item-option">
+                        <input type="checkbox" name="weapons" id="weapons" />
+                        <label for="weapons"
+                            ><span>Weapons</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input
+                            type="checkbox"
+                            name="characters"
+                            id="characters"
+                        />
+                        <label for="characters"
+                            ><span>Characters</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input type="checkbox" name="tools" id="tools" />
+                        <label for="tools"
+                            ><span>Tools</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input type="checkbox" name="chests" id="chests" />
+                        <label for="chests"
+                            ><span>Chests</span><span>10</span></label
+                        >
+                    </div>
+                </div>
+
+                <div class="item-type rarity">
+                    <h2>Rarity</h2>
+                    <div class="item-option">
+                        <input
+                            type="checkbox"
+                            name="rarityAll"
+                            id="rarityAll"
+                            checked
+                        />
+                        <label for="rarityAll"
+                            ><span>All</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input type="checkbox" name="common" id="common" />
+                        <label for="common"
+                            ><span>common</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input type="checkbox" name="rare" id="rare" />
+                        <label for="rare"
+                            ><span>rare</span><span>10</span></label
+                        >
+                    </div>
+                    <div class="item-option">
+                        <input
+                            type="checkbox"
+                            name="legendary"
+                            id="legendary"
+                        />
+                        <label for="legendary"
+                            ><span>legendary</span><span>10</span></label
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="shop-right">
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span class="shop-item-bluetag">Featured</span>
+                        <span class="shop-item-blueGrad">LEGENDARY</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Wand.png"
+                        alt="wand image"
+                    />
+                    <h3>Magic Wand</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span class="shop-item-orangetag">Sale</span>
+                        <span class="shop-item-orangeText">RARE</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Sword.png"
+                        alt="wand image"
+                    />
+                    <h3>Emerald Sword</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span></span>
+                        <span>COMMON</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Axe.png"
+                        alt="wand image"
+                    />
+                    <h3>Axe</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span></span>
+                        <span>COMMON</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Potion.png"
+                        alt="wand image"
+                    />
+                    <h3>Red Potion</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span></span>
+                        <span>COMMON</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Chest.png"
+                        alt="wand image"
+                    />
+                    <h3>Mystery Chest</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <div class="shop-item-header">
+                        <span></span>
+                        <span>COMMON</span>
+                    </div>
+                    <img
+                        class="shop-item-img"
+                        src="./images/Bow.png"
+                        alt="wand image"
+                    />
+                    <h3>Bow and Arrow</h3>
+                    <span class="shop-line"></span>
+                    <div class="shop-item-cost">
+                        <img src="./images/shop-item-diamond.png" alt="" />
+                        <span>65</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
