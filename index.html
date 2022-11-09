@@ -18,7 +18,7 @@
         <title>Codera App</title>
     </head>
     <body>
-        <div id="loginModal">
+        <div class="modal" id="loginModal">
             <div class="modalForm">
                 <img id="crossbarLogin" src="./images/crossbar.png" alt="" />
                 <h2>Welcome Back!</h2>
@@ -67,6 +67,44 @@
                 <button href="#" class="modalBtn gr2">Begin</button>
             </div>
         </div>
+        <div id="mobileNav" class="mobileNav">
+            <img
+                id="navCross"
+                class="navCross"
+                src="./images/navCross.png"
+                alt=""
+            />
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">Cod<span class="blueGradient">era</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a class="NavItems NavActive" href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Code </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Shop </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="#"> Leaderboard </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons">
+                <a id="loginBtnM" class="NavButtonsItem" href="#"> Log In </a>
+                <a
+                    id="joinNowM"
+                    class="NavButtonsItem NavButtonsItemBordered NavRoundedBtn"
+                    href="#"
+                >
+                    Join Now
+                </a>
+            </div>
+        </div>
         <div class="container">
             <div class="Navbar">
                 <div class="logo">
@@ -75,7 +113,13 @@
                         Cod<span class="blueGradient">era</span>
                     </h1>
                 </div>
-                <div>
+                <img
+                    class="hamburger"
+                    id="hamburger"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
+                <div class="desktop-nav">
                     <ul class="NavLinks">
                         <li>
                             <a class="NavItems NavActive" href="#"> Home </a>
@@ -91,13 +135,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="NavButtons">
+                <div class="NavButtons desktop-nav">
                     <a id="loginBtn" class="NavButtonsItem" href="#">
                         Log In
                     </a>
                     <a
                         id="joinNow"
-                        class="NavButtonsItem NavButtonsItemBordered"
+                        class="NavButtonsItem NavButtonsItemBordered NavRoundedBtn"
                         href="#"
                     >
                         Join Now
@@ -115,9 +159,18 @@
                         Lorem Ipsum dummy text, will finish this copy later,
                         dummy llorem ipsum.
                     </p>
-                    <a class="NavButtonsItemBordered" href="#"> Join Now </a>
+                    <a class="NavButtonsItemBordered svg" href="#">
+                        Join Now
+                    </a>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <img src="./images/heroimg.png" alt="" />
+                    <img
+                        class="heroBgBlueGrad"
+                        src="./images/bgBlueGrad.png"
+                        alt=""
+                    />
+                </div>
             </div>
             <div class="Stats flex-between-center">
                 <div class="left flex-between-center">
@@ -249,6 +302,11 @@
                             No Motivation? <br />
                             No Problem.
                         </p>
+                        <img
+                            class="motivationBgBlueGrad"
+                            src="./images/bgBlueGrad2.png"
+                            alt=""
+                        />
                     </div>
                 </div>
             </div>
@@ -368,6 +426,11 @@
                 <div class="left Timeline6-left"></div>
                 <div class="right">
                     <div class="Shop">
+                        <img
+                            class="shopBgBlueGrad"
+                            src="./images/bgBlueGrad1.png"
+                            alt=""
+                        />
                         <h3 class="blueGradText">Shop</h3>
                         <p>Spend your in-game currency through the shop.</p>
                         <div class="Shop-Imgs">
@@ -399,7 +462,7 @@
                     <div class="Timeline7-right-right"></div>
                 </div>
             </div>
-            <div class="Timeline">
+            <div class="Timeline Timeline-Testimonial">
                 <div class="left"></div>
                 <div class="right Timeline8 flex-between-center">
                     <div class="Timeline8-right-left">
@@ -479,6 +542,11 @@
             <div class="Timeline Timeline11">
                 <div class="left"></div>
                 <div class="right">
+                    <img
+                        class="betaBgBlueGrad"
+                        src="./images/bgBlueGrad4.png"
+                        alt=""
+                    />
                     <h3>We are in Beta!</h3>
                     <p>
                         Since we are just getting started, the first 100 users

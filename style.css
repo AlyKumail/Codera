@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -10,7 +13,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background: #081020;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 body::-webkit-scrollbar {
     width: 0.4em;
@@ -48,14 +51,37 @@ img {
 }
 
 .NavButtonsItemBordered {
-    border-image: url("./images/blueGradBorder.png") 3;
+    border-image: url("./images/blueGradBorder.png") 2;
     border-width: 2px;
     border-style: solid;
+
     padding: 0.5rem 1rem;
     transition: all 0.25s ease-in;
 }
 .NavButtonsItemBordered:hover {
     box-shadow: 0px 0px 10px 5px #64acff31;
+}
+
+.NavRoundedBtn {
+    background: transparent;
+    padding: 0.5rem 1rem;
+    position: relative;
+    border: 5px solid transparent;
+    border-radius: 1.75rem;
+}
+
+.NavRoundedBtn::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    z-index: -1;
+    background-image: linear-gradient(90deg, #a2facf, #64acff);
+    mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwcHggMHB4IDIwMHB4IDEwMHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICAgIDxtYXNrIGlkPSJtYXNrIj4NCiAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0id2hpdGUiIHJ5PSI1MCUiPjwvcmVjdD4NCiAgICAgICAgPHJlY3QgeD0iNXB4IiB5PSI1cHgiIGZpbGw9ImJsYWNrIiByeT0iNTAlIiBzdHlsZT0id2lkdGg6IGNhbGMoMTAwJSAtIDEwcHgpOyBoZWlnaHQ6IGNhbGMoMTAwJSAtIDEwcHgpOyI+DQogICAgICAgIDwvcmVjdD4NCiAgICA8L21hc2s+DQogICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iYmxhY2siIHJ5PSI1MCUiIG1hc2s9InVybCgjbWFzaykiPjwvcmVjdD4NCjwvc3ZnPg==");
+
+    -webkit-mask-image: url("data:image/svg+xml;charset=utf-8;base64,PHN2ZyB2aWV3Qm94PSIwcHggMHB4IDIwMHB4IDEwMHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICAgIDxtYXNrIGlkPSJtYXNrIj4NCiAgICAgICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0id2hpdGUiIHJ5PSI1MCUiPjwvcmVjdD4NCiAgICAgICAgPHJlY3QgeD0iNXB4IiB5PSI1cHgiIGZpbGw9ImJsYWNrIiByeT0iNTAlIiBzdHlsZT0id2lkdGg6IGNhbGMoMTAwJSAtIDEwcHgpOyBoZWlnaHQ6IGNhbGMoMTAwJSAtIDEwcHgpOyI+DQogICAgICAgIDwvcmVjdD4NCiAgICA8L21hc2s+DQogICAgPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iYmxhY2siIHJ5PSI1MCUiIG1hc2s9InVybCgjbWFzaykiPjwvcmVjdD4NCjwvc3ZnPg==");
 }
 
 .blueGradText {
@@ -73,6 +99,135 @@ img {
     background: #afbcda;
     border-radius: 50px;
     margin-right: 10px;
+}
+
+.svg {
+    -webkit-transition: all 150ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    position: relative;
+}
+
+.svg:before {
+    position: absolute;
+    content: "";
+    background: url(https://f.cl.ly/items/3H3A0D1N281a2T280F3o/heist.svg)
+        no-repeat center center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.svg:after {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, #a2facff6, #64acff);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -2;
+    -webkit-transition: all 250ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.svg:hover {
+    color: #333;
+    border: 2px linear-gradient(90deg, #a2facf1e, #64acff21) solid;
+    box-shadow: 0px 0px 30px 7px #64acff33;
+}
+.svg:hover:before {
+    opacity: 0.8;
+}
+.svg:hover:after {
+    top: 0;
+}
+
+.heroBgBlueGrad {
+    position: absolute;
+    bottom: -17rem;
+    right: -10rem;
+    z-index: 22;
+}
+.motivationBgBlueGrad {
+    position: absolute;
+    top: -280%;
+    left: -45%;
+
+    height: 500px;
+}
+.shopBgBlueGrad {
+    position: absolute;
+    top: -50%;
+}
+.betaBgBlueGrad {
+    position: absolute;
+    top: -60%;
+}
+
+@media screen and (max-width: 768px) {
+    .heroBgBlueGrad,
+    .motivationBgBlueGrad,
+    .shopBgBlueGrad,
+    .betaBgBlueGrad {
+        display: none;
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+.desktop-nav {
+}
+.mobileNav {
+    position: fixed;
+    z-index: 99;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    min-height: 100vh !important;
+    background: #081020;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.mobileNav h1 {
+    font-size: 1.8rem;
+}
+.mobileNav .NavLinks {
+    flex-direction: column;
+    margin: 2rem 0;
+}
+.mobileNav .NavLinks li {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+.mobileNav .NavButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.5rem;
+}
+.mobileNav .NavButtons a {
+    font-size: 0.9rem;
+}
+.mobileNav .NavButtonsItem {
+    margin: 0;
+}
+.navCross {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 20px;
+    cursor: pointer;
 }
 
 /* ####### NAVBAR ######## */
@@ -170,8 +325,11 @@ img {
     }
 }
 @media screen and (max-width: 830px) {
+    .desktop-nav {
+        display: none !important;
+    }
     .Navbar {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .header {
         padding: 0;
@@ -186,12 +344,20 @@ img {
     .NavItems {
         margin: 0 22px;
     }
+    .hamburger {
+        cursor: pointer;
+        display: block;
+    }
 }
 
 /* ####### HERO ######## */
 .Hero {
     color: #fff;
     min-height: 88vh;
+}
+.Hero .right {
+    padding: 0 3.5rem;
+    position: relative;
 }
 .flex-between-center {
     display: flex;
@@ -256,7 +422,7 @@ img {
     .Hero h2 {
         font-size: 44px;
         line-height: 59px;
-        margin-top: 4rem;
+        margin-top: 1.5rem;
     }
     .Hero p {
         font-family: "Space Grotesk";
@@ -282,9 +448,9 @@ img {
         width: 90%;
     }
     .Hero .right {
-        height: 100px;
+        /* min-height: 100px; */
         /* border: 1px solid greenyellow; */
-        margin-bottom: 1rem;
+        margin: 2.5rem auto;
     }
     /* .Hero h2 {
         font-size: 54px;
@@ -300,7 +466,20 @@ img {
         color: #bec8df;
     } */
 }
-
+@media screen and (max-width: 450px) {
+    .Hero {
+        min-height: 60vh;
+    }
+    .Hero {
+        justify-content: center;
+    }
+    .Hero .right {
+        /* min-height: 100px; */
+        /* border: 1px solid greenyellow; */
+        margin: 2.95rem auto;
+        padding: 0 2rem;
+    }
+}
 /*###### MODALS ########*/
 #loginModal,
 #joinModal {
@@ -481,14 +660,20 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .modal {
+        width: 100%;
+        /* border: 1px solid red; */
+    }
     .modalForm {
-        max-width: 95%;
+        width: 90%;
         max-height: 90%;
         z-index: 10;
-        padding: 2.5rem 2rem;
+        padding: 4.5rem 2rem;
+        /* border: 1px solid red; */
     }
     .modalForm h2 {
         font-size: 2rem;
+        /* z-index: 99; */
     }
 
     .modalForm h3 {
@@ -1076,6 +1261,7 @@ img {
     transform: translateX(-50%);
     margin-top: -3rem;
     margin-bottom: 4rem;
+    position: relative;
 }
 .Motivation p {
     font-family: "Poppins";
@@ -1189,7 +1375,7 @@ img {
     font-size: 17px;
     line-height: 26px;
     text-align: center;
-
+    padding: 0 1rem;
     color: #afbcda;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1323,19 +1509,19 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%;
+    width: 65%;
 }
 .avatar-img2 {
     position: absolute;
     top: 10%;
-    right: -5%;
-    width: 35%;
+    right: -12%;
+    width: 40%;
 }
 .avatar-img3 {
     position: absolute;
-    top: 60%;
+    top: 63%;
     left: 10%;
-    width: 40%;
+    width: 45%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1425,6 +1611,9 @@ img {
 }
 
 /* ###### SHOP ######*/
+.Shop {
+    position: relative;
+}
 .Shop h3 {
     font-family: "Poppins";
     font-style: normal;
@@ -1826,10 +2015,18 @@ img {
         /* border: 1px solid red; */
         justify-content: center;
         align-items: center;
+        width: 100% !important;
+        /* border: 1px solid white; */
+    }
+    .Timeline-Testimonial .left {
+        width: 5%;
     }
 
     .testimonials {
         flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        /* border: 1px solid red; */
     }
     .testimonial {
         padding: 2.25rem 1.2rem;
@@ -1921,6 +2118,7 @@ img {
     color: #ffffff;
 }
 .Timeline11 .right {
+    position: relative;
     background: linear-gradient(
         257.25deg,
         rgba(8, 16, 34, 0.2) 5.23%,
@@ -1984,6 +2182,13 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .Timeline11 .right {
+        width: 95%;
+        padding: 1rem 2rem;
+    }
+    .Timeline11 .left {
+        width: 5%;
+    }
     .Timeline11 h3 {
         font-size: 30px;
         line-height: 72px;
@@ -2144,6 +2349,11 @@ img {
 }
 .footer-info img {
     margin-right: 10px;
+    max-width: 100%;
+}
+.footer-info .logo img {
+    /* width: 80px; */
+    width: 60px;
 }
 .footer-info h1 {
     font-family: "Space Grotesk";

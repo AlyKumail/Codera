@@ -41,3 +41,14 @@ loginBtn.addEventListener("click", () => {
     // }
     console.log("joinnow");
 });
+
+const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobileNav");
+const navCross = document.getElementById("navCross");
+
+hamburger.addEventListener("click", () => {
+    mobileNav.style.display = "flex";
+});
+navCross.addEventListener("click", () => {
+    mobileNav.style.display = "none";
+});
