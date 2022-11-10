@@ -246,7 +246,7 @@ img {
     font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 29px;
     /* line-height: 46px; */
     /* identical to box height */
     color: #fff;
@@ -2010,6 +2010,19 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        justify-content: center !important;
+        /* border: 1px solid red; */
+        align-items: center !important;
+    }
+    .person img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .person p {
+        text-align: center;
+    }
     .Timeline8 {
         flex-direction: column;
         /* border: 1px solid red; */
@@ -2029,7 +2042,7 @@ img {
         /* border: 1px solid red; */
     }
     .testimonial {
-        padding: 2.25rem 1.2rem;
+        padding: 1rem 1.2rem;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -2321,6 +2334,9 @@ img {
         font-size: 17px;
         line-height: 31px;
         margin: 0.5rem 0;
+    }
+    .Ninja .right {
+        margin-top: 9rem;
     }
 }
 
