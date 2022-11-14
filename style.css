@@ -947,7 +947,7 @@ img {
     /* border: 1px solid green; */
 }
 .Timeline .right {
-    width: 71%;
+    width: 72%;
     /* border: 1px solid green; */
     /* padding-bottom: 5rem; */
 }
@@ -1184,15 +1184,20 @@ img {
     padding: 1rem;
     position: relative;
     padding-left: 4rem;
+    width: 43%;
+
     /* border: 1px solid rebeccapurple; */
 }
 .Project .project-right {
     /* border: 1px solid red; */
+    width: 57%;
+
 }
 .Project .project-right img {
     display: block;
-    margin-right: 0px;
-    margin-left: auto;
+    /* margin-right: 0px;
+    margin-left: auto; */
+    margin-left: 3.5rem !important;
 }
 .Project h4 {
     font-family: "Space Grotesk";
@@ -1336,6 +1341,81 @@ img {
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 }
+
+/* ##### GAMIFICATION CONTAINER ######*/
+.gamification-container{
+    /* border: 1px solid red; */
+    /* padding: 3rem 2rem; */
+    margin: 4rem 0;
+    color: #fff;
+}
+.gamification-item{
+    /* border: 1px solid blue; */
+    padding-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+
+}
+.gamification-item-rev{
+    flex-direction: row-reverse;
+}
+.gamification-item-rev .gamification-item-left{
+    margin-left: 2.5rem;
+}
+.gamification-item h4{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: .5rem;
+}
+.gamification-item p{
+    color: rgba(255, 255, 255, 0.7);
+}
+.gamification-item-left{
+    /* border: 1px solid green; */
+
+    width: 40%;
+}
+.gamification-item-right{
+    /* border: 1px solid yellow; */
+
+    width: 60%;
+}
+.gamification-item-right img{
+    max-width: 100%;
+}
+.img-sm1{
+    padding-right: 3rem;
+
+}
+.img-sm{
+    padding: 0rem 2.5rem;
+    margin-right: -1rem;
+}
+
+@media screen and (max-width: 768px){
+    .gamification-item{
+        flex-direction: column;
+    padding-left: 1.5rem;
+
+    }
+    .gamification-item-left,
+    .gamification-item-right{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .img-sm{
+        padding: 1rem ;
+        margin-right: 0rem;
+    }
+    
+}
+
+
 /* ##### REWARDS ######*/
 .Rewards {
     width: 100%;
@@ -2135,14 +2215,47 @@ img {
     background: linear-gradient(
         257.25deg,
         rgba(8, 16, 34, 0.2) 5.23%,
-        rgba(8, 16, 34, 0.9) 96.29%
+        rgba(59, 74, 109, 0.9) 96.29%
     );
     backdrop-filter: blur(32.5px);
     /* Note: backdrop-filter has minimal browser support */
-    padding: 1.8rem 0;
+    padding: 2.5rem 0;
     border-radius: 30px;
 
     border: 1px solid #afbcda66;
+    width: 90%;
+    margin: 0 auto;
+}
+.beta-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 3rem 0; */
+}
+.beta-left{
+    /* border:1px solid red; */
+    padding-left: 3rem;
+}
+.beta-right{
+    /* border:1px solid blue; */
+    position: relative;
+}
+.beta-blue-grad{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    z-index: -1;
+}
+@media screen and (max-width: 768px){
+    .beta-container{
+        flex-direction: column;
+    }
+    .beta-left,
+    .beta-right{
+        padding: 0;
+        width: 90%;
+    }
 }
 .Timeline11 h3 {
     font-family: "Poppins";
