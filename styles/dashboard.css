@@ -1240,7 +1240,7 @@ color: rgba(255, 255, 255, 0.24);
         width: 42%;
     }
     .Leaderboard {
-        margin-top: 12rem;
+        margin-top: 1rem;
     }
     .leaderboard-wrap {
         width: 75%;
@@ -1262,6 +1262,7 @@ color: rgba(255, 255, 255, 0.24);
     }
     .Shop {
         flex-direction: column;
+        margin-top: 0rem;
     }
     .shop-left {
         width: 50%;
@@ -1272,7 +1273,7 @@ color: rgba(255, 255, 255, 0.24);
         margin: 0 auto;
     }
     .shop-item {
-        width: 72%;
+        width: 100%;
     }
     .home-left-wrap{
         flex-direction: column;
@@ -1319,6 +1320,27 @@ color: rgba(255, 255, 255, 0.24);
     }
     .crystalScore img{
         width: 35px;
+
+    }
+    .vertical-logo{
+        flex-direction: column;
+    }
+    .vertical-logo img{
+        margin-bottom: 5px;
+    }
+    .leaderboard-item-info img{
+        max-width: 22% !important;
+    }
+    .Leaderboard h4{
+        font-size: 1.3rem;
+        margin-right: 10px;
+    }
+    .Leaderboard span{
+        font-size: 1.2rem;
+
+    }
+    .Leaderboard p{
+        font-size: 1.3rem;
 
     }
 }

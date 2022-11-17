@@ -19,7 +19,105 @@
         <title>Code</title>
     </head>
     <body>
-        <div class="Navbar">
+        <div id="mobileNav" class="mobileNav">
+            <img
+                id="navCross"
+                class="navCross"
+                src="./images/navCross.png"
+                alt=""
+            />
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">COD<span class="blueGradient">ERA</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinksMob">
+                    <li>
+                        <a class="NavItems " href="dashboard.html"> Home </a>
+                    </li>
+                    <li>
+                        <a class="NavItems NavActive" href="code.html"> Code </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="shop.html"> Shop </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="leaderboard.html"> Leaderboard </a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+        <div class="Navbar Leaderboard-Nav">
+            <div class="logo vertical-logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">Cod<span class="blueGradient">era</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinks">
+                    <li>
+                        <a
+                            class="NavItems NavActive flex-center-center-col"
+                            href="dashboard.html"
+                        >
+                            <img src="./images/home.png" alt="" />
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="code.html"
+                        >
+                            <img src="./images/code.png" alt="" />
+                            <span>Code</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="shop.html"
+                        >
+                            <img src="./images/shop.png" alt="" />
+                            <span>Shop</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="NavItems flex-center-center-col"
+                            href="leaderboard.html"
+                        >
+                            <img src="./images/leaderboard.png" alt="" />
+                            <span>Leaderboard</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtons flex">
+                <a class="DashboardNavPoints flex-center-center" href="#">
+                    <img class="fireball" src="./images/award.png" alt="" />
+                    5
+                </a>
+                <a class="DashboardNavPoints flex-center-center" href="#">
+                    <img class="fireball" src="./images/fireball.png" alt="" />
+                    2
+                </a>
+                <a
+                    class="DashboardNavPoints flex-center-center crystalScore"
+                    href="#"
+                >
+                    <img src="./images/crystal.png" alt="" />
+                    <span>5</span>
+                </a>
+            </div>
+            <img
+                    class="hamburger"
+                    id="hamburger"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
+        </div>
+        <!-- <div class="Navbar">
             <div class="logo">
                 <img class="logoImg" src="./images/logo.png" alt="" />
                 <h1 class="header">Cod<span class="blueGradient">era</span></h1>
@@ -81,7 +179,7 @@
                     <span>5</span>
                 </a>
             </div>
-        </div>
+        </div> -->
 
         <div class="Code">
             <div class="course-wrap">
@@ -144,5 +242,7 @@
                 </div>
             </div>
         </div>
+        <script src="./dashboardScript.js"></script>
+
     </body>
 </html>
