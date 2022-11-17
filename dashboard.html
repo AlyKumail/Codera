@@ -19,6 +19,35 @@
         <title>Dashboard</title>
     </head>
     <body>
+        <div id="mobileNav" class="mobileNav">
+            <img
+                id="navCross"
+                class="navCross"
+                src="./images/navCross.png"
+                alt=""
+            />
+            <div class="logo">
+                <img class="logoImg" src="./images/logo.png" alt="" />
+                <h1 class="header">COD<span class="blueGradient">ERA</span></h1>
+            </div>
+            <div>
+                <ul class="NavLinksMob">
+                    <li>
+                        <a class="NavItems NavActive" href="dashboard.html"> Home </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="code.html"> Code </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="shop.html"> Shop </a>
+                    </li>
+                    <li>
+                        <a class="NavItems" href="leaderboard.html"> Leaderboard </a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
         <div class="Navbar Leaderboard-Nav">
             <div class="logo">
                 <img class="logoImg" src="./images/logo.png" alt="" />
@@ -80,7 +109,14 @@
                     <img src="./images/crystal.png" alt="" />
                     <span>5</span>
                 </a>
+                
             </div>
+            <img
+                    class="hamburger"
+                    id="hamburger"
+                    src="./images/hamburger.png"
+                    alt=""
+                />
         </div>
 
         <div class="Home flex-between-start">
@@ -115,7 +151,21 @@
                             <p>VIEW ALL</p>
                         </div>
                         <div class="acheivements-body flex-center-center-col">
-                            <div class="acheivements-item">
+                            <div class="acheivement-item flex-between-center">
+                                <div class="acheievement-item__left"><h2>01</h2></div>
+                                <div class="acheievement-item__right">
+                                    <h3>Your First Level!</h3>
+                                    <p>Complete Intro Course</p>
+                                </div>
+                            </div>
+                            <div class="acheivement-item flex-between-center">
+                                <div class="acheievement-item__left"><h2>02</h2></div>
+                                <div class="acheievement-item__right">
+                                    <h3>Chinkook Pilot</h3>
+                                    <p>Write your first program</p>
+                                </div>
+                            </div>
+                            <!-- <div class="acheivements-item">
                                 <input type="checkbox" name="1st" id="1st" />
 
                                 <label for="1st">Complete Intro Course</label>
@@ -127,7 +177,7 @@
                             <div class="acheivements-item">
                                 <input type="checkbox" name="3rd" id="3rd" />
                                 <label for="3rd">Get Five Shards</label>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="progress">
@@ -172,7 +222,76 @@
                 </div>
             </div>
             <div class="home-right">
-                <div class="character-header flex-between-center">
+                <div class="user-data">
+                    <div class="user-data__header flex-between-center">
+                        <div class="user-data__header__greet flex-start-center">
+                            <img src="./images/user-profilepic.png" alt="">
+                            <h3>Welcome Back, username.</h3>
+                        </div>
+                        <div class="subscription ">
+                            <span class="subs-tag flex-center-center">
+                                <img src="./images/thunder.png" alt="">
+                                <p>Power+ Subscription</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="user-data__body flex-start-start">
+                        <img src="/images/woodleague.png" alt="">
+                        <div class="user-data__body__info flex-start-center-col">
+                            <h4>WOOD LEAGUE</h4>
+                            <div class="user-data__body__info__progress flex-start-center">
+                                <div class="user-progress-bar">
+                                    <div class="progress-track">
+
+                                        <span class="progress-fill">
+        
+                                        </span>
+                                    </div>
+                                    <p>Next: Silver</p>
+                                </div>
+                                <img src="./images/silvertrasure.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-time">
+                    <h3>Learning Time</h3>
+                    <p>Total time: 5h 45m</p>
+                    <img src="./images/graph.png" alt="">
+                    <div class="months flex-start-center">
+                        <p>Apr</p>
+                        <p>May</p>
+                        <p>Jun</p>
+                        <p>Jul</p>
+                    </div>
+                </div>
+
+                <div class="badges">
+                    <h3>Badges</h3>
+                    <div class="badges-container">
+                        
+                    </div>
+                </div>
+                <div class="friends">
+                    <h3>Friends</h3>
+                    <div class="friends-container flex-start-center">
+                        <div class="friend-pic flex-start-center">
+                            <img src="./images/friends-pic.png" alt="">
+                            <span class="friend-status online"></span>
+                        </div>
+                        <div class="friend-pic flex-start-center">
+                            <img src="./images/friends-pic.png" alt="">
+                            <span class="friend-status "></span>
+                        </div>
+                        <div class="friend-pic flex-start-center">
+                            <img src="./images/friends-pic.png" alt="">
+                            <span class="friend-status "></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- <div class="character-header flex-between-center">
                     <div class="character-name flex">
                         <img src="./images/fire_knight.png" alt="" />
                         <h4>Fire Knight</h4>
@@ -288,8 +407,20 @@
                         />
                         <img src="./images/idle.png" alt="" />
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
+        <script>const hamburger = document.getElementById("hamburger");
+            const mobileNav = document.getElementById("mobileNav");
+            const navCross = document.getElementById("navCross");
+            
+            hamburger.addEventListener("click", () => {
+                mobileNav.style.display = "flex";
+
+                console.log("ham");
+            });
+            navCross.addEventListener("click", () => {
+                mobileNav.style.display = "none";
+            });</script>
     </body>
 </html>

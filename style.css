@@ -14,9 +14,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #081020;
     overflow: hidden;
+    overflow-x: hidden !important;
+
 }
 body::-webkit-scrollbar {
-    width: 0.4em;
+    width: 0.25em;
 }
 
 body::-webkit-scrollbar-track {
@@ -40,7 +42,6 @@ img {
 
 .container {
     max-width: 1290px;
-
     margin: 0 auto;
 }
 
@@ -492,6 +493,8 @@ img {
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+
 }
 .displayNav {
     display: flex !important;
