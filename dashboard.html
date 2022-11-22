@@ -286,7 +286,12 @@
                 <div class="user-data">
                     <div class="user-data__header flex-between-center">
                         <div class="user-data__header__greet flex-start-center">
-                            <img src="./images/user-profilepic.png" alt="" />
+                            <div class="profile-pic">
+                                <img
+                                    src="./images/user-profilepic.png"
+                                    alt=""
+                                />
+                            </div>
                             <h3>Welcome Back, username.</h3>
                         </div>
                         <div class="subscription">
@@ -320,7 +325,9 @@
                 <div class="learning-time">
                     <h3>Learning Time</h3>
                     <p>Total time: 5h 45m</p>
-                    <canvas id="myChart"></canvas>
+
+                    <canvas class="chart" id="myChart"></canvas>
+
                     <!-- <img src="./images/graph.png" alt="" />
                     <div class="months flex-start-center">
                         <p>Apr</p>
@@ -514,6 +521,8 @@
                 data: data,
                 options: {
                     responsive: true,
+                    maintainAspectRatio: true,
+
                     plugins: {
                         title: {
                             display: true,

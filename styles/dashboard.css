@@ -520,6 +520,7 @@ img {
 }
 .acheivements-modal h2 {
     margin-bottom: 1rem;
+    margin-right: 1rem;
 }
 .acheivements-modal img {
     width: 20px;
@@ -723,6 +724,7 @@ stats-body-data-right p {
 }
 
 /*--------------*/
+
 .user-data {
     backdrop-filter: blur(10.5px);
     /* Note: backdrop-filter has minimal browser support */
@@ -823,6 +825,18 @@ stats-body-data-right p {
         rgba(172, 97, 67, 0.85) 96.93%
     );
     border-radius: 40px;
+}
+
+.profile-pic {
+    border: 3px solid #a2facf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    margin-right: 5px;
+}
+.profile-pic img {
+    margin: 0;
 }
 
 .user-progress-bar p {
@@ -1447,5 +1461,14 @@ stats-body-data-right p {
     }
     .acheivements-modal {
         width: 80%;
+    }
+    .learning-time,
+    .chart {
+        /* min-height: 500px !important; */
+    }
+    .chart-container {
+        /* position: relative;
+        height: 40vh !important;
+        width: 100%; */
     }
 }
