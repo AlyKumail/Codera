@@ -1445,4 +1445,7 @@ stats-body-data-right p {
     .Leaderboard p {
         font-size: 1.3rem;
     }
+    .acheivements-modal {
+        width: 80%;
+    }
 }
