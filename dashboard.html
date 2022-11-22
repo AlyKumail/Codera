@@ -16,6 +16,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
             rel="stylesheet"
         />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <title>Dashboard</title>
     </head>
     <body>
@@ -33,20 +34,23 @@
             <div>
                 <ul class="NavLinksMob">
                     <li>
-                        <a class="NavItems " href="dashboard.html"> Home </a>
+                        <a class="NavItems" href="dashboard.html"> Home </a>
                     </li>
                     <li>
-                        <a class="NavItems NavActive" href="code.html"> Code </a>
+                        <a class="NavItems NavActive" href="code.html">
+                            Code
+                        </a>
                     </li>
                     <li>
                         <a class="NavItems" href="shop.html"> Shop </a>
                     </li>
                     <li>
-                        <a class="NavItems" href="leaderboard.html"> Leaderboard </a>
+                        <a class="NavItems" href="leaderboard.html">
+                            Leaderboard
+                        </a>
                     </li>
                 </ul>
             </div>
-           
         </div>
         <div class="Navbar Leaderboard-Nav">
             <div class="logo vertical-logo">
@@ -111,15 +115,69 @@
                 </a>
             </div>
             <img
-                    class="hamburger"
-                    id="hamburger"
-                    src="./images/hamburger.png"
-                    alt=""
-                />
+                class="hamburger"
+                id="hamburger"
+                src="./images/hamburger.png"
+                alt=""
+            />
         </div>
 
         <div class="Home flex-between-start">
             <div class="home-left">
+                <div id="acheivementModal" class="acheivements-modal">
+                    <img
+                        id="acheivementCross"
+                        src="./images/navCross.png"
+                        alt=""
+                    />
+                    <h2>All Acheivements</h2>
+
+                    <div class="acheivement-item flex-between-center">
+                        <div class="acheievement-item__left">
+                            <h2>02</h2>
+                        </div>
+                        <div class="acheievement-item__right">
+                            <h3>Chinkook Pilot</h3>
+                            <p>Write your first program</p>
+                        </div>
+                    </div>
+                    <div class="acheivement-item flex-between-center">
+                        <div class="acheievement-item__left">
+                            <h2>02</h2>
+                        </div>
+                        <div class="acheievement-item__right">
+                            <h3>Chinkook Pilot</h3>
+                            <p>Write your first program</p>
+                        </div>
+                    </div>
+                    <div class="acheivement-item flex-between-center">
+                        <div class="acheievement-item__left">
+                            <h2>02</h2>
+                        </div>
+                        <div class="acheievement-item__right">
+                            <h3>Chinkook Pilot</h3>
+                            <p>Write your first program</p>
+                        </div>
+                    </div>
+                    <div class="acheivement-item flex-between-center">
+                        <div class="acheievement-item__left">
+                            <h2>02</h2>
+                        </div>
+                        <div class="acheievement-item__right">
+                            <h3>Chinkook Pilot</h3>
+                            <p>Write your first program</p>
+                        </div>
+                    </div>
+                    <div class="acheivement-item flex-between-center">
+                        <div class="acheievement-item__left">
+                            <h2>02</h2>
+                        </div>
+                        <div class="acheievement-item__right">
+                            <h3>Chinkook Pilot</h3>
+                            <p>Write your first program</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="leftoff">
                     <h2>Pick up where you left off...</h2>
                     <div class="leftoff-data flex-center-center">
@@ -147,18 +205,22 @@
                     <div class="acheivements">
                         <div class="acheivements-header flex-between-center">
                             <h2>Acheivements</h2>
-                            <p>VIEW ALL</p>
+                            <p id="view-all">VIEW ALL</p>
                         </div>
                         <div class="acheivements-body flex-center-center-col">
                             <div class="acheivement-item flex-between-center">
-                                <div class="acheievement-item__left"><h2>01</h2></div>
+                                <div class="acheievement-item__left">
+                                    <h2>01</h2>
+                                </div>
                                 <div class="acheievement-item__right">
                                     <h3>Your First Level!</h3>
                                     <p>Complete Intro Course</p>
                                 </div>
                             </div>
                             <div class="acheivement-item flex-between-center">
-                                <div class="acheievement-item__left"><h2>02</h2></div>
+                                <div class="acheievement-item__left">
+                                    <h2>02</h2>
+                                </div>
                                 <div class="acheievement-item__right">
                                     <h3>Chinkook Pilot</h3>
                                     <p>Write your first program</p>
@@ -224,70 +286,69 @@
                 <div class="user-data">
                     <div class="user-data__header flex-between-center">
                         <div class="user-data__header__greet flex-start-center">
-                            <img src="./images/user-profilepic.png" alt="">
+                            <img src="./images/user-profilepic.png" alt="" />
                             <h3>Welcome Back, username.</h3>
                         </div>
-                        <div class="subscription ">
+                        <div class="subscription">
                             <span class="subs-tag flex-center-center">
-                                <img src="./images/thunder.png" alt="">
+                                <img src="./images/thunder.png" alt="" />
                                 <p>Power+ Subscription</p>
                             </span>
                         </div>
                     </div>
                     <div class="user-data__body flex-start-start">
-                        <img src="/images/woodleague.png" alt="">
-                        <div class="user-data__body__info flex-start-center-col">
+                        <img src="/images/woodleague.png" alt="" />
+                        <div
+                            class="user-data__body__info flex-start-center-col"
+                        >
                             <h4>WOOD LEAGUE</h4>
-                            <div class="user-data__body__info__progress flex-start-center">
+                            <div
+                                class="user-data__body__info__progress flex-start-center"
+                            >
                                 <div class="user-progress-bar">
                                     <div class="progress-track">
-
-                                        <span class="progress-fill">
-        
-                                        </span>
+                                        <span class="progress-fill"> </span>
                                     </div>
                                     <p>Next: Silver</p>
                                 </div>
-                                <img src="./images/silvertrasure.png" alt="">
+                                <img src="./images/silvertrasure.png" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="learning-time">
                     <h3>Learning Time</h3>
                     <p>Total time: 5h 45m</p>
-                    <img src="./images/graph.png" alt="">
+                    <canvas id="myChart"></canvas>
+                    <!-- <img src="./images/graph.png" alt="" />
                     <div class="months flex-start-center">
                         <p>Apr</p>
                         <p>May</p>
                         <p>Jun</p>
                         <p>Jul</p>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="badges">
                     <h3>Badges</h3>
-                    <div class="badges-container">
-                        
-                    </div>
+                    <div class="badges-container"></div>
                 </div>
                 <div class="friends">
                     <h3>Friends</h3>
                     <div class="friends-container flex-start-center">
                         <div class="friend-pic flex-start-center">
-                            <img src="./images/friends-pic.png" alt="">
+                            <img src="./images/friends-pic.png" alt="" />
                             <span class="friend-status online"></span>
                         </div>
                         <div class="friend-pic flex-start-center">
-                            <img src="./images/friends-pic.png" alt="">
-                            <span class="friend-status "></span>
+                            <img src="./images/friends-pic.png" alt="" />
+                            <span class="friend-status"></span>
                         </div>
                         <div class="friend-pic flex-start-center">
-                            <img src="./images/friends-pic.png" alt="">
-                            <span class="friend-status "></span>
+                            <img src="./images/friends-pic.png" alt="" />
+                            <span class="friend-status"></span>
                         </div>
-                        
                     </div>
                 </div>
                 <!-- <div class="character-header flex-between-center">
@@ -409,7 +470,79 @@
                 </div> -->
             </div>
         </div>
-        <script src="./dashboardScript.js"></script>
+        <script>
+            const ctx = document.getElementById("myChart");
 
+            // <block:setup:1>
+            const DATA_COUNT = 12;
+            const labels = [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec",
+            ];
+            // for (let i = 0; i < DATA_COUNT; i++) {
+            //     labels.push(i.toString());
+            // }
+            const datapoints = [
+                0, 20, 20, 60, 60, 120, 140, 180, 120, 125, 105, 110, 170,
+            ];
+            const data = {
+                labels: labels,
+                datasets: [
+                    {
+                        label: "Learning Time",
+                        data: datapoints,
+                        // borderColor: red,
+                        fill: false,
+                        cubicInterpolationMode: "monotone",
+                        tension: 0.4,
+                    },
+                ],
+            };
+
+            new Chart(ctx, {
+                type: "line",
+                data: data,
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: "Total Time: 5h 45m",
+                        },
+                    },
+                    interaction: {
+                        intersect: false,
+                    },
+                    scales: {
+                        x: {
+                            display: true,
+                            title: {
+                                display: true,
+                            },
+                        },
+                        y: {
+                            display: true,
+                            title: {
+                                display: true,
+                                text: "Hours",
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 200,
+                        },
+                    },
+                },
+            });
+        </script>
+        <script src="./dashboardScript.js"></script>
     </body>
 </html>
