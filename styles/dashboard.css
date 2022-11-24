@@ -503,7 +503,7 @@ img {
 }
 .acheivements-modal {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1023,7 +1023,7 @@ stats-body-data-right p {
     margin-bottom: 1rem;
 }
 .course-status {
-    padding: 0.7rem;
+    padding: 1rem;
     border-radius: 100px;
     display: flex;
     align-items: center;
@@ -1040,13 +1040,16 @@ stats-body-data-right p {
 }
 .point-number {
     background-color: #ffffff14;
-    width: 70px;
-    height: 70px;
+    /* width: 70px;
+    height: 70px; */
+}
+.point-number span {
+    margin-right: 1.5px;
 }
 .point-number img {
-    width: 30px;
-    height: 20px;
-    /* margin-left: -5px; */
+    /* width: 30px;
+    height: 20px; */
+    margin-left: 1.5px;
 }
 .greenLine {
     display: inline-block;
@@ -1215,6 +1218,42 @@ stats-body-data-right p {
     align-items: center;
     justify-content: center;
     padding: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.shop-item-cost:hover {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.slide {
+    position: relative;
+    overflow: hidden;
+}
+
+.text {
+    position: relative;
+    transition: 0.5s;
+}
+
+.slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 55px;
+    background-color: #1fffb471;
+    transform: translate(-110%, 0) skew(-30deg);
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+.slide:hover .text {
+    color: #fff;
+}
+
+.slide:hover::before {
+    transform: translate(-5%, 0) skew(-15deg);
 }
 
 .shop-item-cost span {
@@ -1470,5 +1509,11 @@ stats-body-data-right p {
         /* position: relative;
         height: 40vh !important;
         width: 100%; */
+    }
+    .green-tick {
+        margin-top: 10px;
+    }
+    .green-tick img {
+        width: 35px;
     }
 }
